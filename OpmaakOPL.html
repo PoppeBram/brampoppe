@@ -1,0 +1,39 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tekst opmaken</title>
+<script type="text/javascript" src="opmaak.js"></script>
+</head>
+<body>
+<input type="checkbox" name="lower" id="lower" onchange="tekst.opmaken('tekst');" />
+<label for="lower">Kleine letters</label>
+<input type="checkbox" name="upper" id="upper" onchange="tekst.opmaken('tekst');" />
+<label for="upper">Hoofdletters</label>
+<input type="checkbox" name="big" id="big" onchange="tekst.opmaken('tekst');" />
+<label for="big">Groot</label>
+<input type="checkbox" name="blink" id="blink" onchange="tekst.opmaken('tekst');" />
+<label for="blink">Knipperen</label>
+<input type="checkbox" name="bold" id="bold" onchange="tekst.opmaken('tekst');" />
+<label for="bold">Vet</label>
+<input type="checkbox" name="fixed" id="fixed" onchange="tekst.opmaken('tekst');" />
+<label for="fixed">Vaste letterbreedte</label>
+<input type="checkbox" name="italics" id="italics" onchange="tekst.opmaken('tekst');" />
+<label for="italics">Cursief</label>
+<input type="checkbox" name="link" id="link" onchange="tekst.opmaken('tekst');" />
+<label for="link">Koppeling</label>
+<input type="checkbox" name="small" id="small" onchange="tekst.opmaken('tekst');" />
+<label for="small">Klein</label>
+<input type="checkbox" name="strike" id="strike" onchange="tekst.opmaken('tekst');" />
+<label for="strike">Doorhalen</label>
+<input type="checkbox" name="sub" id="sub" onchange="tekst.opmaken('tekst');" />
+<label for="sub">Subscript</label>
+<input type="checkbox" name="super" id="super" onchange="tekst.opmaken('tekst');" />
+<label for="super">Superscript</label>
+<div id="tekst"></div>
+<script type="text/javascript">
+var tekst = new tekstopmaak("Filmquiz bracht knappe ex-yogi van de wijs.", "lower", "upper", "big", "blink", "bold", "fixed", "italics", "link", "small", "strike", "sub", "super");
+</script>
+</body>
+</html>
